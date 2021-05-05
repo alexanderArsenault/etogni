@@ -1,3 +1,1 @@
-click to expand image on image component
-arrow to top
 button styling

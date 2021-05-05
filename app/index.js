@@ -36,7 +36,7 @@ $("a").on('click', function(event) {
 
 		// Store hash
 		var hash = this.hash;
-
+		
 		// Using jQuery's animate() method to add smooth page scroll
 		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 		$('html, body').animate({
@@ -46,6 +46,18 @@ $("a").on('click', function(event) {
 		});
 	} // End if
 });
+
+let navlinks = document.querySelectorAll('.mobile-navigation-link a')
+
+for (var i = 0; i < navlinks.length; i++){
+	navlinks[i].addEventListener('click', function(event){
+
+		for (var x = 0; x < navlinks.length; x++){
+			navlinks[x].classList.remove('active');
+		}
+		this.classList.add('active');
+	})
+}
 
 $('#top-button').on('click', function(event){
 	$('html, body').animate({

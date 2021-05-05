@@ -7,10 +7,6 @@ import 'scss/_index.scss';
 import * as $ from 'jquery'
 
 
-// ================================
-// START YOUR APP HERE
-// ================================
-
 const $menuBtn = document.querySelector(".menu");
 const $nav = document.querySelector(".mobile-navigation")
 $menuBtn.addEventListener("click", () => {
@@ -59,3 +55,18 @@ $('#top-button').on('click', function(event){
 	});
 })
 
+const $toggleImageExpand = document.getElementsByClassName('toggle-expand');
+
+for (var i = 0; i < $toggleImageExpand.length; i++){
+	$toggleImageExpand[i].addEventListener("click", (event) => {
+			let parent = $(event.target.parentElement);
+			let siblingimage = $(event.target).siblings()[0]
+
+			parent.toggleClass('opened');
+			if (parent.hasClass('opened')){
+				parent.css('paddingBottom', siblingimage.height)
+			} else {
+				parent.css('paddingBottom', '')
+			}
+	});
+}

@@ -2,13 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="content">
-        <h1>Webpack Boilerplate</h1>
-        <h3>Replace this page with your own code</h3>
-    </div>
-</body>
+    <header>
+        <div class="wrapper">
+            <div class="header-content">
+                <div class="header-content__main">
+                    <button class="menu" aria-label="Main Menu">
+                        <svg width="60" height="60" viewBox="0 0 100 100">
+                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                          <path class="line line2" d="M 20,50 H 80" />
+                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                      </button>
+                    <div class="logo-container">
+                        <img class="logo" src="./assets/logo.png" alt="">
+                    </div>
+                </div>
+                <h1>Energiestrategien</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mobile-navigation">
+            <div class="wrapper">
+                <div class="mobile-navigation-content">
+                    <ul>
+                        <li class="mobile-navigation-link"><a href="#ziele">Ziele</a></li>
+                        <li class="mobile-navigation-link"><a href="#kompetenzen">Kompetenzen</a></li>
+                        <li class="mobile-navigation-link"><a href="#projekte">Projekte</a></li>
+                        <li class="mobile-navigation-link"><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <figure class="hero-image-container">
+                <img src="./assets/hero-image.jpg">
+                <figcaption class="hero-image-description">Panorama Piz Nair Graubünden</figcaption>
+            </figure>
+            <div id="ziele" class="content-text">
+                <div class="content"><h1>Ziele</h1></div>
+                <div class="content">
+                    <p>Die eTeam Togni Energie GmbH wurde 1995 in Zürich (ZH) und in Gordola (TI) gegründet.</p>
+                    <p>Sie engagiert sich konsequent für nachhaltige Energiepolitik, Energieversorgung und Energieanwendungen, mit dem Schwerpunkt Elektrizitätseffizienz.</p>
+                    <p>Sie arbeitet im Netzwerk von S.A.F.E. – Schweizerische Agentur für Energieeffizienz und verfügt im Bereich Stromeffizienz über das neuste Knowhow.</p>
+                </div>
+            </div>
+            <div id="kompetenzen" class="content-text primary">
+                <div class="content">
+                    <h1>Kompetenzen</h1>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Projektleitung</li>
+                        <li>Strategien, Konzepte und Pflichtenhefte</li>
+                        <li>Kommunale Energieplanungen</li>
+                        <li>Erarbeitung von Leitbildern und Förderprogrammen</li>
+                        <li>Organisation und Durchführungen von Tagungen</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="projekte" class="content-text">
+                <div class="content">
+                    <h1>Projekte</h1>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Energieplanungen von Gemeinden und Regionen im Kt. ZH sowie Begleitung und Beratung von Energiestädten.</li>
+                        <li>Projektleitung von diversen Projekten im Bereich Stromeffizienz (LED, Strassenbeleuchtung, topstreetlight.ch, Stand-by, Elektroheizungen, etc.)</li>
+                        <li>Umsetzung von diversen Förderprogrammen von ProKilowatt (effeSTRADA, effeSPORT, alledin.ch)</li>
+                        <li>Fachartikel für diverse Zeitschriften (regelmässige Kolumne in der italienischen Coopzeitung)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="top-button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 56 46" style="enable-background:new 0 0 56 46;" xml:space="preserve">
+                <polygon points="28,20.5 56,45.4 56,24.9 28,0 0,24.9 0,45.4 "></polygon>
+            </svg>
+        </div>
+    </main>
+    <div class="wrapper">
+    <footer id="kontakt">
+            <div class="content-text">
+                <div class="content">
+                    <h1>Kontakt</h1>
+                </div>
+                <div class="content">
+                    <p>eTeam Togni Energie GmbH</p>
+                    <p>Schaffhauserstr. 34</p>
+                    <p>8006 Zürich</p>
+                    <p><a href="tel:+41442730861">+41 44 273 08 61</a></p>
+                    <p><a href="mailto:info@etogni.ch">info@etogni.ch</a></p>
+                    <p><a href="www.etogni.ch">etogni.ch</a></p>
+                    <p><a href="https://map.search.ch/Zürich,Schaffhauserstr.34)">Standort</a></p>
+                </div>
+                <div class="impressum">
+                    <p>© 2020 eTeam Togni Energie GmbH</p>
+                    <p><a href="#">Impressum und Datenschutz</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</footer>
 </html>

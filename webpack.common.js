@@ -35,7 +35,7 @@ module.exports = env => {
 
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.ejs'),
-                title: 'Webpack Boilerplate'
+                title: 'Etogni GmbH'
             }),
 
             new ImageMinimizerPlugin({

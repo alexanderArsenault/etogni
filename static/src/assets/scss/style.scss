@@ -104,12 +104,20 @@ main {
     &.primary {
         background-color: $primary;
     }
-    img {
+    img, figure, iframe {
         max-width: 100%;
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+    }
+    img, figure {
+        padding-bottom: 20px;
     }
     figcaption {
         font-size: 12px;
     }
+    
 }
 
 #top-button {

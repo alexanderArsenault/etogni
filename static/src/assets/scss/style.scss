@@ -1,7 +1,7 @@
-@import './partials/typography';
-@import './partials/variables';
-@import './partials/normalize';
-@import './partials/hamburger';
+@import './partials/_typography';
+@import './partials/_variables';
+@import './partials/_normalize';
+@import './partials/_hamburger';
 
 html {
     box-sizing: border-box;
@@ -103,6 +103,12 @@ main {
     }
     &.primary {
         background-color: $primary;
+    }
+    img {
+        max-width: 100%;
+    }
+    figcaption {
+        font-size: 12px;
     }
 }
 

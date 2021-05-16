@@ -1,11 +1,5 @@
-/**
- * Application entry point
- */
 
-// Load application styles
-import 'scss/_index.scss';
-import * as $ from 'jquery'
-
+import * as $ from 'jquery';
 
 const $menuBtn = document.querySelector(".menu");
 const $nav = document.querySelector(".mobile-navigation")
